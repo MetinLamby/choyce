@@ -1,0 +1,130 @@
+.product-compare-display {
+  background-color: white;
+  margin-top: 20px;
+  height: 100vh;
+  width: 100vw;
+  padding: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  .like {
+    color: transparent;
+  }
+  .left-product {
+    height: 100%;
+    width: 40%;
+    //background-color: black;
+    background-size: cover;
+    object-fit: cover;
+    color: transparent;
+    position: absolute;
+    top: 0px;
+    left: 45px;
+    border-radius: 5px;
+    z-index: 3;
+  }
+  .right-product {
+    height: 100%;
+    width: 40%;
+    //background-color: blue;
+    background-size: cover;
+    object-fit: cover;
+    color: transparent;
+    position: absolute;
+    top: 0px;
+    right: 45px;
+    border-radius: 5px;
+    z-index: 4;
+  }
+  .buy-product {
+    height: 70px;
+    width: 100%;
+    background-color: #FF0010;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: height .25s ease;
+    h5 {
+      margin-bottom: 0px;
+    }
+    a {
+      width: 100%;
+      height: 100%;
+      color: black
+    }
+  }
+  .buy-product:hover {
+    height: 85px;
+  }
+}
+
+.product-comp-inner {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+
+
+.left-product:hover .like {
+  position: absolute;
+  transform: scale(5);
+  z-index: 1000;
+  top: 40%;
+  left: 50%;
+  color: black;
+}
+
+.right-product:hover .like {
+  position: absolute;
+  transform: scale(5);
+  z-index: 1000;
+  top: 40%;
+  left: 50%;
+  color: black;
+}
+
+.left-product:before {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 0%;
+  width: 100%;
+  bottom: 0;
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+}
+.left-product:hover:before {
+  height: 100%;
+}
+
+.right-product:before {
+  content: '';
+  display: block;
+  position: absolute;
+  height: 0%;
+  width: 100%;
+  bottom: 0;
+  //transition: height 0.5s ease-out;
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+}
+.right-product:hover:before {
+  height: 100%;
+}
+
+.dont-like {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+}
+

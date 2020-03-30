@@ -1,0 +1,136 @@
+
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 500;
+  /*border-bottom: solid 1px white;*/
+}
+
+#nav {
+  background: white;
+  transition: background 300ms linear;
+}
+
+.navbar-lewagon {
+  justify-content: space-between;
+  height: 50px;
+  padding: 0px 32px;
+  display: flex;
+}
+
+.nav-bar-logo {
+  color: black !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  h3 {
+    color: black !important;
+    margin-bottom: 0;
+    font-weight: lighter;
+    font-size: 23px;
+  }
+}
+
+.navbar-left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  a {
+    color: black;
+  }
+  a:hover {
+    color: #FF6B6B;
+    text-decoration: none;
+  }
+}
+
+.search-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 25px;
+  p {
+    margin-bottom: 0 !important;
+  }
+  a {
+    /*color: white !important;*/
+  }
+  a:hover {
+    color: #FF6B6B !important;
+  }
+}
+
+.navbar-right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  i {
+    font-size: 30px;
+  }
+  li {
+    display: flex;
+    align-items: center;
+  }
+  a {
+    padding: 0 !important;
+    margin: 0 12.5px;
+    /*color: white !important;*/
+  }
+}
+
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-lewagon .navbar-brand img {
+  width: 40px;
+}
+
+.nav-link {
+  color: black !important;
+}
+
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.sign-out{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  p {
+    font-size: 10px;
+    margin-bottom: 0;
+  }
+}
+
+.sign-in{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  p {
+    font-size: 10px;
+    margin-bottom: 0;
+  }
+}
+
+.navbar-toggler {
+  background: #FF6B6B !important;
+}
+
+.thebox {
+  color: black;
+/*  if box is full use: color: #FF6B6B;*/
+}
+
+
+

@@ -1,0 +1,17 @@
+<div class="product-display">
+  <div class="inner-product-display">
+    <div id="image" style="background-image: url('<%= cl_image_path @product.photo.key, crop: :fill %>')">
+      <h1>Test</h1>
+    </div>
+    <div class="product-desc">
+      <h5>Product Name: <%= @product.name %></h5>
+      <h5>Product Type: <%= @product.product_type %></h5>
+      <h5>Colour: <%= @product.colour %></h5>
+      <h5>Brand: <%= @product.brand %></h5>
+      <div class="show-buttons">
+        <a class="start-btn-gnrl" href="/products">Keep Comparing</a>
+        <a class="start-btn-gnrl-two" href="<%= @product.link %>">Buy Product</a>
+      </div>
+    </div>
+  </div>
+</div>

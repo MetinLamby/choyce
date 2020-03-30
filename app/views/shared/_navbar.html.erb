@@ -1,0 +1,35 @@
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon" id="nav">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <%= link_to root_path do %>
+  <div style="padding-right: 21px;" class="nav-bar-logo">
+    <h3 id="nav-logo">SelectFit</h3>
+  </div>
+  <% end %>
+
+  <div class="navbar-right">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <%= link_to "Home", root_path, class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "About Us", "/pages/about", class: "nav-link" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Contact", "/pages/contact", class: "nav-link" %>
+        </li>
+        <li class="nav-item start-btn-navbar">
+          <%= link_to products_path do %>
+          <div class="start-btn-navbar">
+            <p>Shop</p>
+          </div>
+          <% end %>
+          <%#= link_to "Shop", products_path, class: "nav-link" %>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

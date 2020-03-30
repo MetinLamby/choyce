@@ -1,0 +1,52 @@
+#banner {
+  width: 100vw;
+  height: 100vh;
+  background: #4949FF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  h1 {
+    color: #ADD7F6;
+  }
+  .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4949FF;
+  }
+}
+
+#small-banner {
+  height: 90vh;
+  width: 100vw;
+  background-color: #FF0010;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  h1 {
+    margin-top: 120px;
+    font-size: 350%;
+    font-weight: 900;
+  }
+  .banner-img {
+    background-image: image_url("phone-screen.png");
+    background-size: cover;
+    //height: 300px;
+    //width: 30%;
+    //transform: scale(0.5);
+    background-color: green;
+    height: 650px;
+    width: 300px;
+    margin-top: 35px;
+    p {
+      visibility: hidden;
+    }
+  }
+}

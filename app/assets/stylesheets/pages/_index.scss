@@ -1,0 +1,12 @@
+// Import page-specific CSS files here.
+@import "home";
+@import "products_index";
+
+html:hover {
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+

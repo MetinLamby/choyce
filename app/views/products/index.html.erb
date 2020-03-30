@@ -1,0 +1,243 @@
+<div class="product-compare-display">
+
+
+  <div class="product-comp-inner">
+    <div class="left-product" id="prod-one" style="background-image: url('<%= cl_image_path @product_zero.photo.key, crop: :fill %>')">
+      <i class="fas fa-thumbs-down like"></i>
+      <p>left</p>
+      <div class="buy-product">
+        <%= link_to product_path(@product_zero) do%>
+        <div style="display: flex; align-items: center; justify-content: center; height: 100%">
+          <h5>Show Details</h5>
+        </div>
+        <% end %>
+      </div>
+    </div>
+
+
+    <div class="right-product" id="prod-two" style="background-image: url('<%= cl_image_path @product_one.photo.key, crop: :fill %>')">
+      <i class="fas fa-thumbs-down like"></i>
+      <p>right</p>
+      <div class="buy-product">
+        <%= link_to product_path(@product_one) do%>
+        <div style="display: flex; align-items: center; justify-content: center; height: 100%">
+          <h5>Show Details</h5>
+        </div>
+        <% end %>
+      </div>
+    </div>
+
+    <div class="left-product" id="prod-three" style="background-image: url('<%= cl_image_path @product_two.photo.key, crop: :fill %>')">
+      <i class="fas fa-thumbs-down like"></i>
+      <p>left</p>
+      <div class="buy-product">
+        <%= link_to product_path(@product_two) do%>
+        <div style="display: flex; align-items: center; justify-content: center; height: 100%">
+          <h5>Show Details</h5>
+        </div>
+        <% end %>
+      </div>
+    </div>
+
+
+    <div class="right-product" id="prod-four" style="background-image: url('<%= cl_image_path @product_three.photo.key, crop: :fill %>')">
+      <i class="fas fa-thumbs-down like"></i>
+      <p>right</p>
+      <div class="buy-product">
+        <%= link_to product_path(@product_three) do%>
+        <div style="display: flex; align-items: center; justify-content: center; height: 100%">
+          <h5>Show Details</h5>
+        </div>
+        <% end %>
+      </div>
+    </div>
+
+
+
+    <div class="left-product" id="prod-five" style="background-image: url('<%= cl_image_path @product_four.photo.key, crop: :fill %>')">
+      <i class="fas fa-thumbs-down like"></i>
+      <p>left</p>
+      <div class="buy-product">
+        <%= link_to product_path(@product_four) do%>
+        <div style="display: flex; align-items: center; justify-content: center; height: 100%">
+          <h5>Show Details</h5>
+        </div>
+        <% end %>
+      </div>
+    </div>
+
+
+    <div class="right-product" id="prod-six" style="background-image: url('<%= cl_image_path @product_five.photo.key, crop: :fill %>')">
+      <i class="fas fa-thumbs-down like"></i>
+      <p>right</p>
+      <div class="buy-product">
+        <%= link_to product_path(@product_five) do%>
+        <div style="display: flex; align-items: center; justify-content: center; height: 100%">
+          <h5>Show Details</h5>
+        </div>
+        <% end %>
+      </div>
+    </div>
+
+    <div class="left-product" id="prod-seven" style="background-image: url('<%= cl_image_path @product_six.photo.key, crop: :fill %>')">
+      <i class="fas fa-thumbs-down like"></i>
+      <p>left</p>
+      <div class="buy-product">
+        <%= link_to product_path(@product_six) do%>
+        <div style="display: flex; align-items: center; justify-content: center; height: 100%">
+          <h5>Show Details</h5>
+        </div>
+        <% end %>
+      </div>
+    </div>
+
+
+    <div class="right-product" id="prod-eight" style="background-image: url('<%= cl_image_path @product_seven.photo.key, crop: :fill %>')">
+      <i class="fas fa-thumbs-down like"></i>
+      <p>right</p>
+      <div class="buy-product">
+        <%= link_to product_path(@product_seven) do%>
+        <div style="display: flex; align-items: center; justify-content: center; height: 100%">
+          <h5>Show Details</h5>
+        </div>
+        <% end %>
+      </div>
+    </div>
+
+
+
+
+    <div class="dont-like" id="last-option">
+      <h1>You still don't like the product?</h1>
+      <%= link_to products_path do %>
+      <div class="start-btn-gnrl">
+        <p>No, keep choosing</p>
+      </div>
+      <% end %>
+    </div>
+
+
+  </div>
+</div>
+
+
+<script type="text/javascript">
+  var elementOne = document.getElementById("prod-one");
+  var elementTwo = document.getElementById("prod-two");
+  var elementThree = document.getElementById("prod-three");
+  var elementFour = document.getElementById("prod-four");
+  var elementfive = document.getElementById("prod-five");
+  var elementsix = document.getElementById("prod-six");
+  var elementseven = document.getElementById("prod-seven");
+  var elementeight = document.getElementById("prod-eight");
+  var lastOption = document.getElementById("last-option");
+
+  var arr = [];
+
+  arr.push(elementOne);
+  arr.push(elementTwo);
+  arr.push(elementThree);
+  arr.push(elementFour);
+  arr.push(elementfive);
+  arr.push(elementsix);
+  arr.push(elementseven);
+  arr.push(elementeight);
+
+  elementOne.addEventListener("click", function(){
+    elementOne.style.visibility = "hidden";
+    myFunction();
+    myFunctionTwo()
+  });
+
+  elementTwo.addEventListener("click", function(){
+    elementTwo.style.visibility = "hidden"
+    myFunction();
+    myFunctionTwo()
+  });
+
+  elementThree.addEventListener("click", function(){
+    elementThree.style.visibility = "hidden";
+    myFunction();
+    myFunctionTwo()
+  });
+
+  elementFour.addEventListener("click", function(){
+    elementFour.style.visibility = "hidden";
+    myFunction();
+    myFunctionTwo()
+  });
+
+  elementfive.addEventListener("click", function(){
+    elementfive.style.visibility = "hidden";
+    myFunction();
+    myFunctionTwo()
+  });
+
+  elementsix.addEventListener("click", function(){
+    elementsix.style.visibility = "hidden"
+    myFunction();
+    myFunctionTwo()
+  });
+
+  elementseven.addEventListener("click", function(){
+    elementseven.style.visibility = "hidden";
+    myFunction();
+    myFunctionTwo()
+  });
+
+  elementeight.addEventListener("click", function(){
+    elementeight.style.visibility = "hidden";
+    myFunction();
+    myFunctionTwo()
+  });
+
+
+  function myFunction() {
+    var counter = 0;
+    for (i = 0; i < arr.length; i++) {
+      if (arr[i].style.visibility == "hidden") {
+        counter++;
+      }
+    }
+
+    if (counter == arr.length - 1) {
+      for (i = 0; i < arr.length; i++) {
+        if (!(arr[i].style.visibility == "hidden")) {
+          //arr[i].style.left = "45px";
+
+          arr[i].style.left ="0";
+          arr[i].style.right ="0";
+          arr[i].style.marginLeft ="auto";
+          arr[i].style.marginRight ="auto";
+          //arr[i].style.width ="";
+          //arr[i].style.height ="100%";
+
+
+
+          //alert("We found your product!");
+          //lastOption.style.visibility = "visible";
+        }
+      }
+    }
+  }
+
+  function myFunctionTwo() {
+    var counter = 0;
+    for (i = 0; i < arr.length; i++) {
+      if (arr[i].style.visibility == "hidden") {
+        counter++;
+      }
+    }
+
+    if (counter == arr.length) {
+      lastOption.style.visibility = "visible";
+    }
+  }
+
+
+
+</script>
+
+
+
+
